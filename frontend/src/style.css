@@ -1,0 +1,46 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #0f172a; color: #e2e8f0; font-family: system-ui, sans-serif; min-height: 100vh; }
+
+.app { max-width: 1000px; margin: 0 auto; padding: 24px 18px; display: flex; flex-direction: column; gap: 14px; align-items: center; }
+h1 { font-size: 1.5rem; }
+.lead { color: #94a3b8; font-size: .92rem; text-align: center; }
+
+.layout { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; align-items: flex-start; }
+.panel {
+  background: #1e293b; border: 1px solid #334155; border-radius: 14px;
+  padding: 18px; display: flex; flex-direction: column; gap: 12px;
+}
+.game-panel { align-items: center; }
+.panel h2 { font-size: 1rem; color: #4ade80; }
+
+.hud { display: flex; gap: 18px; color: #94a3b8; }
+.hud b { color: #facc15; }
+
+canvas { border: 3px solid #334155; border-radius: 10px; cursor: pointer; touch-action: manipulation; }
+
+.submit { display: flex; flex-direction: column; gap: 8px; align-items: center; font-size: .92rem; }
+.rowi { display: flex; gap: 8px; }
+.rowi input {
+  background: #0f172a; border: 1px solid #334155; color: #e2e8f0;
+  padding: 8px 12px; border-radius: 8px; width: 180px;
+}
+.rowi input:focus { outline: 2px solid #facc15; }
+
+.btn {
+  background: #273449; color: #e2e8f0; border: 1px solid #334155;
+  border-radius: 9px; padding: 9px 18px; font-weight: 700; cursor: pointer;
+}
+.btn.primary { background: #22c55e; color: #052e16; border-color: transparent; }
+.btn:disabled { opacity: .5; cursor: wait; }
+.btn:hover:not(:disabled) { filter: brightness(1.15); }
+
+.ok { color: #4ade80; font-size: .85rem; }
+.err { color: #f87171; font-size: .85rem; }
+.muted { color: #64748b; }
+.num { font-variant-numeric: tabular-nums; color: #4ade80; font-weight: 700; }
+.small { color: #64748b; font-size: .8rem; }
+
+.tbl { width: 100%; border-collapse: collapse; min-width: 280px; }
+.tbl th, .tbl td { padding: 8px 10px; border-bottom: 1px solid #334155; text-align: left; font-size: .9rem; }
+.tbl th { color: #94a3b8; font-size: .74rem; text-transform: uppercase; letter-spacing: .5px; }
